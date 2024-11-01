@@ -10,7 +10,7 @@ export default function TableList({ handleOpen, tableData, setTableData , search
      const filteredData = tableData.filter(client => 
         client.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
         client.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        client.job.toLowerCase().includes(searchTerm.toLowerCase()) 
+        client.job.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
 

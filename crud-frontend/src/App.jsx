@@ -17,8 +17,8 @@ function App() {
   
   const fetchClients = async () => {
         try {
-            const response  = await axios.get('http://localhost:3000/api/clients')
-            setTableData(response.data); // Set the fetched data
+          const response  = await axios.get('http://localhost:3000/api/clients')
+          setTableData(response.data); // Set the fetched data
 
         } catch (err) {
             setError(err.message);
